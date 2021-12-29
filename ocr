@@ -1,7 +1,10 @@
 import requests
 from aip import AipOcr
 
-image = requests.get('https://res.pandateacher.com/python_classic.png').content
+# image = requests.get('https://res.pandateacher.com/python_classic.png').content
+# image=Image.open('fetch.jpg')
+image=open('fetch.PNG','rb')
+image=image.read()
 
 APP_ID = '16149264'
 API_KEY = 'yxYg9r4OuAs4fYvfcl8tqCYd'
